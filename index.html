@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy</title>
+    <style>
+      .field{
+        width: 500px;
+        margin: 0 auto;
+        padding:20px;
+        background:red
+      }
+    </style>
+</head>
+<body>
+   
+
+    <div class="field">
+       <i></i>
+       <input type="text" value="www.ppppppppppppppppppppp.com" id="input-btn">
+       <button id="copy-btn">Copy</button>
+    </div>
+   
+    <!-- <script>
+      input = document.getElementById('input-btn');
+      copy = document.getElementById('copy-btn');
+      
+    copy.onclick = () => {
+      input.select();
+      document.execCommand("copy");
+     alert("coppied")
+    }
+    </script> -->
+
+
+    <!-- <script>
+      input = document.getElementById('input-btn');
+      copy = document.getElementById('copy-btn');
+      
+    copy.onclick = () => {
+      input.select();
+      document.execCommand("copy");
+      copy.innerText = "Copied";
+    }
+    </script> -->
+
+
+    <!-- <script>
+      input = document.getElementById('input-btn');
+      copy = document.getElementById('copy-btn');
+      
+    copy.onclick = () => {
+    input.select();
+    document.execCommand("delete")
+    }
+    </script> -->
+
+
+    <!-- <script>
+      // field = document.querySelector('.field');
+      input = document.getElementById('input-btn');
+      copy = document.getElementById('copy-btn');
+      
+    copy.onclick = () => {
+      input.select();
+      if(document.execCommand("copy")){
+        // field.classList.add("active");
+        copy.innerText = "Copied";
+
+        setTimeout(() => {
+          // field.classList.remove("active");
+          copy.innerText = "Copy";
+          // window.getSelection().removeAllRanges();
+        }, 3000);
+
+      }
+    }
+    </script> -->
+
+
+    <script>
+      // field = document.querySelector('.field');
+      input = document.getElementById('input-btn');
+      copy = document.getElementById('copy-btn');
+      
+    copy.onclick = () => {
+      input.select();
+      document.execCommand("copy")
+        copy.innerText = "Copied";
+
+        setTimeout(() => {
+          copy.innerText = "Copy";
+        }, 3000);
+
+    }
+    </script>
+</body>
+</html>
